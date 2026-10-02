@@ -1,0 +1,51 @@
+[
+  {
+    "name": "list_orders",
+    "description": "List orders",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "search_orders",
+    "description": "Search orders",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "get_order",
+    "description": "Get order by id",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "list_products",
+    "description": "List products",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "search_products",
+    "description": "Search products",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "get_product",
+    "description": "Get product by id",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  {
+    "name": "check_stock",
+    "description": "Check product stock",
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  }
+]
