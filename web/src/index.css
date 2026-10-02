@@ -1,0 +1,135 @@
+:root {
+  --bg-dark: #050505;
+  --surface: #111111;
+  --border: #232323;
+  --text-main: #e6e6e6;
+  --text-muted: #8a8a8a;
+  --accent: #5e6ad2;
+  --success: #386c42;
+  --error: #8b3a3a;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  width: 240px;
+  border-right: 1px solid var(--border);
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+}
+
+aside nav {
+  padding: 16px 0;
+}
+
+aside nav a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+aside nav a.active, aside nav a:hover {
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+h1 { font-size: 18px; margin-bottom: 24px; }
+h2 { font-size: 14px; margin-bottom: 16px; color: var(--text-muted); }
+
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+button {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button.primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+input {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-muted);
+}
